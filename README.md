@@ -1,6 +1,6 @@
 # Simple Decentralized Exchange
 A simple decentralised exchange based on a constant product market maker model. Implemented in Solidity, tests with Javascript. 
-This is just for educational purposes. Currently the implementation is rather redimentary and lacks many features that i.e. Uniswap has.
+This is just for educational purposes. Currently, the implementation is rather rudimentary and lacks many features that i.e. Uniswap has.
 
 Built and tested using truffle.
 
