@@ -3,7 +3,7 @@
 
 pragma solidity ^0.8.0;
 
-import "./Exchange.sol";
+import "./ExchangeSimple.sol";
 
 
 contract ExchangeFactory is ExchangeFactoryInterface{
@@ -14,7 +14,7 @@ contract ExchangeFactory is ExchangeFactoryInterface{
 
     function createExchange(address _token) public returns (bool){
         require(_token != address(0));
-        Exchange _newExchange = new Exchange();
+        Exchange _newExchange = new ExchangeSimple();
         _newExchange.setup(_token);
         tokenToExchange[_token] = address(_newExchange);
         exchangeToToken[address(_newExchange)] = _token;
